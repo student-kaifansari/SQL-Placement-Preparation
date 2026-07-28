@@ -247,3 +247,52 @@ e.manager_id = m.emp_id → Employee se Manager find karte hain.
 e.emp_id = m.manager_id → Manager ke under Employees find karte hain.
 
 Ye dono alag relationships represent karte hain aur output bhi alag hota hai. -->
+
+<!-- 
+SELF JOIN me confusion sirf ek jagah hai:
+
+e.manager_id = m.emp_id
+
+Aur
+
+e.emp_id = m.manager_id
+
+Ye direction wala concept.
+
+Ye normal hai.
+
+90% beginners isi jagah confuse hote hain.
+
+Main Kya Recommend Karunga
+
+SELF JOIN par aur 3-4 ghante lagane ki zarurat nahi hai.
+
+Placement ke liye bas ye yaad rakho:
+
+Rule 1
+
+SELF JOIN = Same table ko khud ke saath JOIN karna.
+
+Rule 2
+
+Aliases use karte hain.
+
+employee e
+employee m
+Rule 3
+
+Employee → Manager
+
+ON e.manager_id = m.emp_id
+
+Ye sabse common pattern hai.
+
+Rule 4
+
+Manager → Employees
+
+ON e.emp_id = m.manager_id
+
+Ye reverse relation hai.
+
+Bas. -->
